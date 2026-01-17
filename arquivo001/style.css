@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*mexendo com divs*/
+
+div#bloco-1{
+    background: skyblue;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div#bloco-2{
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
