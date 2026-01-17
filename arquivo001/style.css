@@ -2,8 +2,29 @@
 
 /*mexendo com divs*/
 
-div#bloco-1{
-    background: skyblue;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+}
+
+div{
     width: 200px;
     height: 200px;
     text-align: center;
@@ -12,16 +33,30 @@ div#bloco-1{
     align-items: center;
     border: 1px solid black;
     border-radius: 5px;
+
+    cursor: pointer;
+}
+
+div#bloco-1{
+    background: skyblue;
+    user-select: none;
 }
 
 div#bloco-2{
     background: yellow;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 5px;
+    user-select: none;
+}
+
+div#bloco-1.mudar-cor{
+    background: rgb(255, 99, 99);
+}
+
+div#bloco-2.mudar-cor{
+    background: rgb(118, 255, 118);
+}
+
+footer{
+    text-align: right;
+    padding: 5px;
+    margin: 0;
 }
